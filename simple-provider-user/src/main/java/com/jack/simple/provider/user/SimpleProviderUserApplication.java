@@ -1,11 +1,11 @@
-package com.itmuch.cloud.study;
+package com.jack.simple.provider.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProviderUserApplication {
+public class SimpleProviderUserApplication {
   public static void main(String[] args) {
-    SpringApplication.run(ProviderUserApplication.class, args);
+    SpringApplication.run(SimpleProviderUserApplication.class, args);
   }
 }
