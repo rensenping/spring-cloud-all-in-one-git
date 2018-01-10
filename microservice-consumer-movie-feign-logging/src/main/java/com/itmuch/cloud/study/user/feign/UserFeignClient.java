@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.itmuch.cloud.config.FeignLogConfiguration;
-import com.itmuch.cloud.study.user.entity.User;
+import com.jack.simple.consumer.movie.entity.User;
 
 @FeignClient(name = "microservice-provider-user", configuration = FeignLogConfiguration.class)
 public interface UserFeignClient {

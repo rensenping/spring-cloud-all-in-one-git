@@ -1,6 +1,6 @@
 package com.itmuch.cloud.study.user.feign;
 
-import com.itmuch.cloud.study.user.entity.User;
+import com.jack.simple.consumer.movie.entity.User;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 

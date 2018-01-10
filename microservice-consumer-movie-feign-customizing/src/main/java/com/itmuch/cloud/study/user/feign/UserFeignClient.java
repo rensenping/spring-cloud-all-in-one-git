@@ -3,7 +3,7 @@ package com.itmuch.cloud.study.user.feign;
 import org.springframework.cloud.netflix.feign.FeignClient;
 
 import com.itmuch.cloud.config.FeignConfiguration;
-import com.itmuch.cloud.study.user.entity.User;
+import com.jack.simple.consumer.movie.entity.User;
 
 import feign.Param;
 import feign.RequestLine;

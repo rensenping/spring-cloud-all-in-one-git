@@ -99,7 +99,7 @@
         <!--<module>microservice-provider-user-with-auth</module>-->
         <!--<module>microservice-sidecar</module>-->
         <!--<module>microservice-sidecar-client-ribbon</module>-->
-        <!--<module>microservice-simple-consumer-movie</module>-->
+        <module>simple-consumer-movie</module>
         <module>simple-provider-user</module>
         <!--<module>microservice-consumer-movie-ribbon-customizing</module>-->
         <!--<module>microservice-consumer-movie-ribbon-customizing-properties</module>-->

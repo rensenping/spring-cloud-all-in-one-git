@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.itmuch.cloud.study.user.entity.User;
+import com.jack.simple.consumer.movie.entity.User;
 
 import feign.hystrix.FallbackFactory;
 

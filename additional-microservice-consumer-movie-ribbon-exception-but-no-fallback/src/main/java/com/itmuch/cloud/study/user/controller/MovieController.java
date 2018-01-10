@@ -1,6 +1,6 @@
-package com.itmuch.cloud.study.user.controller;
+package com.jack.simple.consumer.movie.controller;
 
-import com.itmuch.cloud.study.user.entity.User;
+import com.jack.simple.consumer.movie.entity.User;
 import com.itmuch.cloud.study.user.service.UserService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.slf4j.Logger;

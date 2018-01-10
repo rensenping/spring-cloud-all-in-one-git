@@ -1,4 +1,4 @@
-package com.itmuch.cloud.study.user.entity;
+package com.jack.simple.consumer.movie.entity;
 
 import java.math.BigDecimal;
 
