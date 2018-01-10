@@ -78,7 +78,7 @@
         <!--<module>microservice-consumer-movie-ribbon-hystrix-turbine-mq</module>-->
         <!--<module>microservice-consumer-movie-understanding-metadata</module>-->
         <!--<module>microservice-consumer-movie-without-eureka</module>-->
-        <!--<module>microservice-discovery-eureka</module>-->
+        <module>discovery-eureka</module>
         <!--<module>microservice-discovery-eureka-authenticating</module>-->
         <!--<module>microservice-discovery-eureka-ha</module>-->
         <!--<module>microservice-file-upload</module>-->
