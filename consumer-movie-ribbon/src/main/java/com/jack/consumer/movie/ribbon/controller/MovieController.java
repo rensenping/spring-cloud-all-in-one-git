@@ -1,4 +1,4 @@
-package com.jack.simple.consumer.movie.controller;
+package com.jack.consumer.movie.ribbon.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
