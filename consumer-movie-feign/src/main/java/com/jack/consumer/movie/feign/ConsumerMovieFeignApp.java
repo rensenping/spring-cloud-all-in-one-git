@@ -1,4 +1,4 @@
-package com.itmuch.cloud.study;
+package com.jack.consumer.movie.feign;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,8 +8,8 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableFeignClients
-public class ConsumerMovieApplication {
+public class ConsumerMovieFeignApp {
   public static void main(String[] args) {
-    SpringApplication.run(ConsumerMovieApplication.class, args);
+    SpringApplication.run(ConsumerMovieFeignApp.class, args);
   }
 }

@@ -1,8 +1,8 @@
 server:
-  port: 8010
+  port: 8006
 spring:
   application:
-    name: microservice-consumer-movie
+    name: consumer-movie-ribbon-hystrix
 eureka:
   client:
     serviceUrl:
