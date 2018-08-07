@@ -1,6 +1,6 @@
 package com.jack.provider.user.controller;
 
-import com.jack.provider.user.entity.User;
+import com.jack.common.entity.User;
 import com.jack.provider.user.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +14,7 @@ public class UserController {
 
   @GetMapping("/{id}")
   public User findById(@PathVariable Long id) {
-    User findOne = this.userRepository.findOne(id);
+    User findOne = userRepository.findOneById(id);
     return findOne;
   }
 }

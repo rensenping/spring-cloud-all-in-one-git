@@ -1,7 +1,8 @@
-package com.jack.simple.consumer.movie.controller;
+package com.itmuch.cloud.study.user.controller;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.jack.common.entity.User;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.loadbalancer.LoadBalancerClient;
@@ -10,12 +11,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import com.jack.simple.consumer.movie.entity.User;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-
+/**
+ * @author yangyueming
+ */
 @RestController
+@Slf4j
 public class MovieController {
-  private static final Logger LOGGER = LoggerFactory.getLogger(MovieController.class);
   @Autowired
   private RestTemplate restTemplate;
   @Autowired
@@ -38,6 +39,6 @@ public class MovieController {
   public void logUserInstance() {
     ServiceInstance serviceInstance = this.loadBalancerClient.choose("microservice-provider-user");
     // 打印当前选择的是哪个节点
-    MovieController.LOGGER.info("{}:{}:{}", serviceInstance.getServiceId(), serviceInstance.getHost(), serviceInstance.getPort());
+    MovieController.log.info("{}:{}:{}", serviceInstance.getServiceId(), serviceInstance.getHost(), serviceInstance.getPort());
   }
 }

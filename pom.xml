@@ -48,6 +48,7 @@
     <modules>
         <module>poms</module>
         <module>common</module>
+        <module>discovery-eureka</module>
         <!--<module>microservice-config-client</module>-->
         <!--<module>microservice-config-client-authenticating</module>-->
         <!--<module>microservice-config-client-eureka</module>-->
@@ -74,6 +75,8 @@
         <module>consumer-movie-ribbon</module>
         <module>consumer-movie-ribbon-customizing</module>
         <module>consumer-movie-ribbon-customizing-properties</module>
+        <module>consumer-movie-ribbon-hystrix</module>
+        <module>consumer-movie-feign-hystrix-fallback</module>
         <!--<module>microservice-consumer-movie-ribbon-hystrix</module>-->
         <!--<module>microservice-consumer-movie-ribbon-hystrix-turbine-mq</module>-->
         <!--<module>microservice-consumer-movie-understanding-metadata</module>-->
@@ -92,7 +95,7 @@
         <!--<module>microservice-hystrix-dashboard</module>-->
         <!--<module>microservice-hystrix-turbine</module>-->
         <!--<module>microservice-hystrix-turbine-mq</module>-->
-        <!--<module>provider-user</module>-->
+        <module>provider-user</module>
         <!--<module>provider-user2</module>-->
         <!--<module>microservice-provider-user-ip</module>-->
         <!--<module>microservice-provider-user-multiple-params</module>-->

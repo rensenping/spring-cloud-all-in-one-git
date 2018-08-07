@@ -4,15 +4,16 @@ spring:
   application:
     name: provider-user
   jpa:
-    generate-ddl: false
     show-sql: true
     hibernate:
-      ddl-auto: none
-  datasource:                           # 指定数据源
-    platform: h2                        # 指定数据源类型
-    schema: classpath:schema.sql        # 指定h2数据库的建表脚本
-    data: classpath:data.sql            # 指定h2数据库的数据脚本
-logging:                                # 配置日志级别，让hibernate打印出执行的SQL
+      ddl-auto: update
+  datasource:
+    url: ${datasource.url}
+    username: ${datasource.username}
+    password: ${datasource.password}
+#    schema: classpath:schema.sql
+    data: classpath:data.sql
+logging:
   level:
     root: INFO
     org.hibernate: INFO
