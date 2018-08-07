@@ -1,5 +1,6 @@
 package com.jack.simple.consumer.movie.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +13,12 @@ import org.springframework.web.client.RestTemplate;
 
 import com.jack.simple.consumer.movie.entity.User;
 
+/**
+ * @author yangyueming
+ */
 @RestController
+@Slf4j
 public class MovieController {
-  private static final Logger LOGGER = LoggerFactory.getLogger(MovieController.class);
   @Autowired
   private RestTemplate restTemplate;
   @Autowired
@@ -29,6 +33,6 @@ public class MovieController {
   public void logUserInstance() {
     ServiceInstance serviceInstance = this.loadBalancerClient.choose("microservice-provider-user");
     // 打印当前选择的是哪个节点
-    MovieController.LOGGER.info("{}:{}:{}", serviceInstance.getServiceId(), serviceInstance.getHost(), serviceInstance.getPort());
+    MovieController.log.info("{}:{}:{}", serviceInstance.getServiceId(), serviceInstance.getHost(), serviceInstance.getPort());
   }
 }
