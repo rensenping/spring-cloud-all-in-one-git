@@ -1,6 +1,7 @@
 package com.itmuch.cloud.study.user.feign;
 
 import com.jack.common.entity.User;
+import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -5,8 +5,11 @@ import org.springframework.context.annotation.Configuration;
 
 import feign.Logger;
 
+/**
+ * @author yangyueming
+ */
 @Configuration
-public class FeignLogConfiguration {
+public class FeignLogConfig {
   @Bean
   Logger.Level feignLoggerLevel() {
     return Logger.Level.BASIC;
