@@ -48,16 +48,27 @@
     <modules>
         <module>poms</module>
         <module>common</module>
-        <module>discovery-eureka</module>
+        <module>eureka</module>
 
         <module>consumer-movie-ribbon</module>
         <module>consumer-movie-ribbon-customizing</module>
         <module>consumer-movie-ribbon-customizing-properties</module>
+
         <module>consumer-movie-ribbon-hystrix</module>
+        <module>hystrix-dashboard</module>
+        <module>hystrix-turbine</module>
+        <module>hystrix-turbine-mq</module>
+
         <module>consumer-movie-feign-hystrix-fallback</module>
         <module>consumer-movie-feign-logging</module>
+        <module>consumer-movie-feign-hystrix-fallback-stream</module>
 
         <module>provider-user</module>
+
+        <!--<module>zuul-reg-exp</module>-->
+
+        <module>config-server</module>
+        <module>config-client</module>
 
     </modules>
 

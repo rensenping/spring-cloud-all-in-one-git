@@ -1,5 +1,5 @@
 server:
-  port: 8006
+  port: 8010
 spring:
   application:
     name: consumer-movie-ribbon-hystrix
@@ -9,3 +9,12 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+
+
+
+#spring-boot-starter-actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

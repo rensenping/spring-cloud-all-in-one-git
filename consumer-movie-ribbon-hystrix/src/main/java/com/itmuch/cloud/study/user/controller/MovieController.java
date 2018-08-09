@@ -25,7 +25,7 @@ public class MovieController {
   @HystrixCommand(fallbackMethod = "findByIdFallback")
   @GetMapping("/user/{id}")
   public User findById(@PathVariable Long id) {
-    return this.restTemplate.getForObject("http://microservice-provider-user/" + id, User.class);
+    return this.restTemplate.getForObject("http://provider-user/" + id, User.class);
   }
 
   public User findByIdFallback(Long id) {
@@ -37,7 +37,7 @@ public class MovieController {
 
   @GetMapping("/log-user-instance")
   public void logUserInstance() {
-    ServiceInstance serviceInstance = this.loadBalancerClient.choose("microservice-provider-user");
+    ServiceInstance serviceInstance = this.loadBalancerClient.choose("provider-user");
     // 打印当前选择的是哪个节点
     MovieController.log.info("{}:{}:{}", serviceInstance.getServiceId(), serviceInstance.getHost(), serviceInstance.getPort());
   }

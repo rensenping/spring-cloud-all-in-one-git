@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/y13423685271/spring-cloud-config-repository.git      # 配置Git仓库的地址
+          username: y13423685271                                                        # Git仓库的账号
+          password: y362424                                                        # Git仓库的密码
