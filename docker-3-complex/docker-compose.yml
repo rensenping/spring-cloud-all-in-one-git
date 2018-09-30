@@ -1,0 +1,23 @@
+version: "2"
+services:
+  peer1:
+    image: jack/microservice-discovery-eureka-ha:1.0
+    ports:
+      - "8761:8761"
+    environment:
+      - spring.profiles.active=peer1
+  peer2:
+    image: jack/microservice-discovery-eureka-ha:1.0
+    hostname: peer2
+    ports:
+      - "8762:8762"
+    environment:
+      - spring.profiles.active=peer2
+  microservice-provider-user:
+    image: jack/microservice-provider-user:1.0
+  microservice-consumer-movie-ribbon-hystrix:
+    image: jack/microservice-consumer-movie-ribbon-hystrix:1.0
+  microservice-gateway-zuul:
+    image: jack/microservice-gateway-zuul:1.0
+  microservice-hystrix-turbine:
+    image: jack/microservice-hystrix-turbine:1.0

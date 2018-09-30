@@ -1,0 +1,18 @@
+version: '2'
+services:
+  discovery:
+    image: jack/microservice-discovery-eureka:1.0
+    ports:
+      - "8761:8761"
+  microservice-provider-user:
+    image: jack/microservice-provider-user:1.0
+  microservice-consumer-movie-ribbon-hystrix:
+    image: jack/microservice-consumer-movie-ribbon-hystrix:1.0
+  microservice-gateway-zuul:
+    image: jack/microservice-gateway-zuul:1.0
+  microservice-hystrix-dashboard:
+    image: jack/microservice-hystrix-dashboard:1.0
+  microservice-hystrix-turbine:
+    image: jack/microservice-hystrix-turbine:1.0
+
+# 最简单的配置方式，等价于docker-compose.yml。
