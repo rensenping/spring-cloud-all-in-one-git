@@ -25,6 +25,8 @@
         <module>common</module>
         <module>eurekas/eureka</module>
 
+        <module>file-upload</module>
+
         <module>zuuls/zuul</module>
 
         <module>consumers/consumer-movie-feign</module>

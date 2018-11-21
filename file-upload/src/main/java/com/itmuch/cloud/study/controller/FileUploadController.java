@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -23,8 +24,8 @@ public class FileUploadController {
    * @return 文件在服务器上的绝对路径
    * @throws IOException IO异常
    */
-  @RequestMapping(value = "/upload", method = RequestMethod.POST)
-  public @ResponseBody String handleFileUpload(@RequestParam(value = "file", required = true) MultipartFile file) throws IOException {
+  @PostMapping(value = "/upload")
+  public @ResponseBody String handleFileUpload(@RequestParam(value = "file") MultipartFile file) throws IOException {
     byte[] bytes = file.getBytes();
     File fileToSave = new File(file.getOriginalFilename());
     FileCopyUtils.copy(bytes, fileToSave);
