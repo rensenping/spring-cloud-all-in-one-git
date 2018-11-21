@@ -20,7 +20,7 @@ public class UserController {
 
   @GetMapping("/{id}")
   public User findById(@PathVariable Long id) {
-    return (User) userRepository.findById(id).orElse(null);
+    return userRepository.findById(id).orElse(null);
   }
 
   @GetMapping("/get")
