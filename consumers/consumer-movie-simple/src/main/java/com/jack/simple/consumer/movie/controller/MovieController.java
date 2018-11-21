@@ -1,6 +1,6 @@
 package com.jack.simple.consumer.movie.controller;
 
-import com.jack.simple.consumer.movie.entity.User;
+import com.jack.common.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

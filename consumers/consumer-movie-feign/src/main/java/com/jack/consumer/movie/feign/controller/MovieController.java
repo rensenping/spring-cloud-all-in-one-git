@@ -1,6 +1,6 @@
 package com.jack.consumer.movie.feign.controller;
 
-import com.jack.consumer.movie.feign.entity.User;
+import com.jack.common.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

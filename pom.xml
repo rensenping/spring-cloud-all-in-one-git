@@ -25,16 +25,19 @@
         <module>common</module>
         <module>eurekas/eureka</module>
 
-        <module>consumers/consumer-movie-RestTemplate</module>
         <module>consumers/consumer-movie-feign</module>
+        <module>consumers/consumer-movie-feign-hystrix-fallback</module>
+        <module>consumers/consumer-movie-feign-logging</module>
+        <module>consumers/consumer-movie-feign-hystrix-fallback-stream</module>
+
+        <module>consumers/consumer-movie-RestTemplate</module>
         <module>consumers/consumer-movie-ribbon</module>
         <module>consumers/consumer-movie-ribbon-customizing</module>
         <module>consumers/consumer-movie-ribbon-customizing-properties</module>
 
         <module>consumers/consumer-movie-ribbon-hystrix</module>
-        <module>consumers/consumer-movie-feign-hystrix-fallback</module>
-        <module>consumers/consumer-movie-feign-logging</module>
-        <module>consumers/consumer-movie-feign-hystrix-fallback-stream</module>
+        <module>consumers/consumer-movie-simple</module>
+
 
         <module>hystrixs/hystrix-dashboard</module>
         <module>hystrixs/hystrix-turbine</module>
