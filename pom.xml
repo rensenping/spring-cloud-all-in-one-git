@@ -9,39 +9,11 @@
     <version>1.0</version>
     <packaging>pom</packaging>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.4.RELEASE</version>
-        <relativePath/>
-    </parent>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.jack</groupId>
-                <artifactId>poms</artifactId>
-                <version>1.0</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.SR1</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <properties>
         <file.encoding>UTF-8</file.encoding>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-boot-admin.version>1.5.6</spring-boot-admin.version>
     </properties>
 
 
@@ -51,33 +23,31 @@
         <!--<module>poms</module>-->
 
         <module>common</module>
-        <module>eureka</module>
+        <module>eurekas/eureka</module>
 
-        <!--<module>consumer-movie</module>-->
-        <module>consumer-movie-feign</module>
-        <module>consumer-movie-ribbon</module>
-        <module>consumer-movie-ribbon-customizing</module>
-        <module>consumer-movie-ribbon-customizing-properties</module>
+        <module>consumers/consumer-movie-RestTemplate</module>
+        <module>consumers/consumer-movie-feign</module>
+        <module>consumers/consumer-movie-ribbon</module>
+        <module>consumers/consumer-movie-ribbon-customizing</module>
+        <module>consumers/consumer-movie-ribbon-customizing-properties</module>
 
-        <module>consumer-movie-ribbon-hystrix</module>
-        <module>hystrix-dashboard</module>
-        <module>hystrix-turbine</module>
-        <module>hystrix-turbine-mq</module>
+        <module>consumers/consumer-movie-ribbon-hystrix</module>
+        <module>consumers/consumer-movie-feign-hystrix-fallback</module>
+        <module>consumers/consumer-movie-feign-logging</module>
+        <module>consumers/consumer-movie-feign-hystrix-fallback-stream</module>
 
-        <module>consumer-movie-feign-hystrix-fallback</module>
-        <module>consumer-movie-feign-logging</module>
-        <module>consumer-movie-feign-hystrix-fallback-stream</module>
+        <module>hystrixs/hystrix-dashboard</module>
+        <module>hystrixs/hystrix-turbine</module>
+        <module>hystrixs/hystrix-turbine-mq</module>
 
-        <module>provider-user</module>
-        <module>provider-user-ip</module>
-        <module>provider-user-multiple-params</module>
-        <module>provider-user-my-metadata</module>
-        <module>provider-user-with-auth</module>
 
-        <!--<module>zuul-reg-exp</module>-->
 
-        <!--<module>config-server</module>-->
-        <!--<module>config-client</module>-->
+        <module>providers/provider-user</module>
+        <module>providers/provider-user-ip</module>
+        <module>providers/provider-user-multiple-params</module>
+        <module>providers/provider-user-my-metadata</module>
+        <module>providers/provider-user-simple</module>
+        <module>providers/provider-user-with-auth</module>
 
     </modules>
 
