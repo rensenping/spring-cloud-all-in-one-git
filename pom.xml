@@ -70,6 +70,9 @@
 
         <module>provider-user</module>
         <module>provider-user-ip</module>
+        <module>provider-user-multiple-params</module>
+        <module>provider-user-my-metadata</module>
+        <module>provider-user-with-auth</module>
 
         <!--<module>zuul-reg-exp</module>-->
 
