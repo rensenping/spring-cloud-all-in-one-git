@@ -46,10 +46,15 @@
 
 
     <modules>
-        <module>poms</module>
+        <module>parent</module>
+
+        <!--<module>poms</module>-->
+
         <module>common</module>
         <module>eureka</module>
 
+        <!--<module>consumer-movie</module>-->
+        <module>consumer-movie-feign</module>
         <module>consumer-movie-ribbon</module>
         <module>consumer-movie-ribbon-customizing</module>
         <module>consumer-movie-ribbon-customizing-properties</module>
@@ -64,11 +69,12 @@
         <module>consumer-movie-feign-hystrix-fallback-stream</module>
 
         <module>provider-user</module>
+        <module>provider-user-ip</module>
 
         <!--<module>zuul-reg-exp</module>-->
 
-        <module>config-server</module>
-        <module>config-client</module>
+        <!--<module>config-server</module>-->
+        <!--<module>config-client</module>-->
 
     </modules>
 

@@ -1,12 +1,15 @@
 package com.jack.provider.user.controller;
 
 import com.jack.common.entity.User;
-import com.jack.provider.user.repository.UserRepository;
+import com.jack.common.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author yangyueming
+ */
 @RestController
 public class UserController {
   @Autowired
@@ -14,7 +17,6 @@ public class UserController {
 
   @GetMapping("/{id}")
   public User findById(@PathVariable Long id) {
-    User findOne = userRepository.findOneById(id);
-    return findOne;
+    return userRepository.findById(id).orElse(null);
   }
 }

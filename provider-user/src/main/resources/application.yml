@@ -1,5 +1,6 @@
 server:
   port: 8001
+
 spring:
   application:
     name: provider-user
@@ -13,12 +14,14 @@ spring:
     password: ${datasource.password}
 #    schema: classpath:schema.sql
     data: classpath:data.sql
+
 logging:
   level:
     root: INFO
     org.hibernate: INFO
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+
 eureka:
   client:
     serviceUrl:
