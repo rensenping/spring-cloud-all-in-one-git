@@ -3,6 +3,7 @@ package com.itmuch.cloud.study.filters.pre;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -14,7 +15,8 @@ public class PreRequestLogFilter extends ZuulFilter {
 
   @Override
   public String filterType() {
-    return "pre";
+//    return "pre";
+    return FilterConstants.PRE_TYPE;
   }
 
   @Override
@@ -29,9 +31,9 @@ public class PreRequestLogFilter extends ZuulFilter {
 
   @Override
   public Object run() {
-    RequestContext ctx = RequestContext.getCurrentContext();
-    HttpServletRequest request = ctx.getRequest();
-    PreRequestLogFilter.log.info(String.format("send %s request to %s", request.getMethod(), request.getRequestURL().toString()));
+    RequestContext requestContext = RequestContext.getCurrentContext();
+    HttpServletRequest request = requestContext.getRequest();
+    log.info(String.format("send %s request to %s", request.getMethod(), request.getRequestURL().toString()));
     return null;
   }
 }

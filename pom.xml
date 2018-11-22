@@ -27,6 +27,7 @@
 
         <!--<module>file-upload</module>-->
         <module>zuuls/zuul</module>
+        <module>zuuls/zuul-filter</module>
 
         <module>consumers/consumer-movie-feign</module>
         <module>consumers/consumer-movie-feign-hystrix-fallback</module>
