@@ -15,13 +15,12 @@ public class PreRequestLogFilter extends ZuulFilter {
 
   @Override
   public String filterType() {
-//    return "pre";
     return FilterConstants.PRE_TYPE;
   }
 
   @Override
   public int filterOrder() {
-    return 1;
+    return FilterConstants.DEBUG_FILTER_ORDER;
   }
 
   @Override
