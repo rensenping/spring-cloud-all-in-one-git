@@ -9,7 +9,7 @@
         <groupId>com.jack</groupId>
         <artifactId>parent</artifactId>
         <version>1.0</version>
-        <relativePath/>
+        <relativePath>../../parent/pom.xml</relativePath>
     </parent>
 
     <dependencyManagement>

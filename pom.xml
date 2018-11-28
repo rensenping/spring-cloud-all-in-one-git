@@ -20,12 +20,13 @@
     <modules>
         <module>parent</module>
 
-        <!--<module>poms</module>-->
+        <module>poms</module>
 
         <module>common</module>
-        <module>eurekas/eureka</module>
 
-        <!--<module>file-upload</module>-->
+        <module>eurekas/eureka-server</module>
+        <module>eurekas/eureka-client</module>
+
         <module>zuuls/zuul</module>
         <module>zuuls/zuul-filter</module>
 
