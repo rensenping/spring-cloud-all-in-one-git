@@ -12,7 +12,7 @@ spring:
           password:                                                         # Git仓库的密码
         health:
           repositories:
-            a-foo: 
+            a-foo:
               label: config-label-v2.0
               name: foo
               profiles: dev

@@ -10,17 +10,17 @@ services:           # Version 2 file format的固定写法，为project定义服
       - microservice-discovery-eureka:discovery
   microservice-consumer-movie-ribbon-hystrix:
     image: jack/microservice-consumer-movie-ribbon-hystrix:1.0
-    links: 
+    links:
       - microservice-discovery-eureka:discovery
   microservice-gateway-zuul:
     image: jack/microservice-gateway-zuul:1.0
-    links: 
+    links:
       - microservice-discovery-eureka:discovery
   microservice-hystrix-dashboard:
     image: jack/microservice-hystrix-dashboard:1.0
-    links: 
+    links:
       - microservice-discovery-eureka:discovery
   microservice-hystrix-turbine:
     image: jack/microservice-hystrix-turbine:1.0
-    links: 
+    links:
       - microservice-discovery-eureka:discovery

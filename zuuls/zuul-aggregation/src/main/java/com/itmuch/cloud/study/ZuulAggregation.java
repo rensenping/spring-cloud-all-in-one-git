@@ -10,13 +10,13 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableZuulProxy
 public class ZuulAggregation {
-  public static void main(String[] args) {
-    SpringApplication.run(ZuulAggregation.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(ZuulAggregation.class, args);
+    }
 
-  @Bean
-  @LoadBalanced
-  public RestTemplate restTemplate() {
-    return new RestTemplate();
-  }
+    @Bean
+    @LoadBalanced
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 }

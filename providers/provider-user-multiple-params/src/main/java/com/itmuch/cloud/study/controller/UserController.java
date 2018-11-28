@@ -15,21 +15,21 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class UserController {
-  @Autowired
-  private UserRepository userRepository;
+    @Autowired
+    private UserRepository userRepository;
 
-  @GetMapping("/{id}")
-  public User findById(@PathVariable Long id) {
-    return userRepository.findById(id).orElse(null);
-  }
+    @GetMapping("/{id}")
+    public User findById(@PathVariable Long id) {
+        return userRepository.findById(id).orElse(null);
+    }
 
-  @GetMapping("/get")
-  public User get(User user) {
-    return user;
-  }
+    @GetMapping("/get")
+    public User get(User user) {
+        return user;
+    }
 
-  @PostMapping("/post")
-  public User post(@RequestBody User user) {
-    return user;
-  }
+    @PostMapping("/post")
+    public User post(@RequestBody User user) {
+        return user;
+    }
 }

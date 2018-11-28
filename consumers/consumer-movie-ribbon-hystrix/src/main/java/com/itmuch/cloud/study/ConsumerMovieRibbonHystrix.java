@@ -20,18 +20,18 @@ import org.springframework.web.client.RestTemplate;
 //@EnableHystrix
 @EnableHystrixDashboard
 public class ConsumerMovieRibbonHystrix {
-  @Bean
-  @LoadBalanced
-  public RestTemplate restTemplate() {
-    return new RestTemplate();
-  }
-
-  public static void main(String[] args) {
-    SpringApplication.run(ConsumerMovieRibbonHystrix.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(ConsumerMovieRibbonHystrix.class, args);
+    }
 
     @Bean
-    public ServletRegistrationBean getServlet(){
+    @LoadBalanced
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+
+    @Bean
+    public ServletRegistrationBean getServlet() {
 
         HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
 

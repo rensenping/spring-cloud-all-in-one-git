@@ -1,6 +1,6 @@
 server:
   port: 9411
-spring:  
+spring:
   rabbitmq:
     host: localhost
     port: 5672

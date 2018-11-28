@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MovieController {
-  @Autowired
-  UserFeignClient userFeignClient;
+    @Autowired
+    UserFeignClient userFeignClient;
 
-  @GetMapping("/user/{id}")
-  public User findById(@PathVariable Long id) {
-    return userFeignClient.findById(id);
-  }
+    @GetMapping("/user/{id}")
+    public User findById(@PathVariable Long id) {
+        return userFeignClient.findById(id);
+    }
 }

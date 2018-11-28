@@ -12,7 +12,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableFeignClients
 public class ConsumerMovieFeignApp {
-  public static void main(String[] args) {
-    SpringApplication.run(ConsumerMovieFeignApp.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(ConsumerMovieFeignApp.class, args);
+    }
 }

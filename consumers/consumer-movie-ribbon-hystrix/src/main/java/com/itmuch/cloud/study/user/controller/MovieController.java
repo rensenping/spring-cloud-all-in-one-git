@@ -17,28 +17,28 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @Slf4j
 public class MovieController {
-  @Autowired
-  private RestTemplate restTemplate;
-  @Autowired
-  private LoadBalancerClient loadBalancerClient;
+    @Autowired
+    private RestTemplate restTemplate;
+    @Autowired
+    private LoadBalancerClient loadBalancerClient;
 
-  @HystrixCommand(fallbackMethod = "findByIdFallback")
-  @GetMapping("/user/{id}")
-  public User findById(@PathVariable Long id) {
-    return this.restTemplate.getForObject("http://provider-user/" + id, User.class);
-  }
+    @HystrixCommand(fallbackMethod = "findByIdFallback")
+    @GetMapping("/user/{id}")
+    public User findById(@PathVariable Long id) {
+        return this.restTemplate.getForObject("http://provider-user/" + id, User.class);
+    }
 
-  public User findByIdFallback(Long id) {
-    User user = new User();
-    user.setId(-1L);
-    user.setName("默认用户");
-    return user;
-  }
+    public User findByIdFallback(Long id) {
+        User user = new User();
+        user.setId(-1L);
+        user.setName("默认用户");
+        return user;
+    }
 
-  @GetMapping("/log-user-instance")
-  public void logUserInstance() {
-    ServiceInstance serviceInstance = this.loadBalancerClient.choose("provider-user");
-    // 打印当前选择的是哪个节点
-    MovieController.log.info("{}:{}:{}", serviceInstance.getServiceId(), serviceInstance.getHost(), serviceInstance.getPort());
-  }
+    @GetMapping("/log-user-instance")
+    public void logUserInstance() {
+        ServiceInstance serviceInstance = this.loadBalancerClient.choose("provider-user");
+        // 打印当前选择的是哪个节点
+        MovieController.log.info("{}:{}:{}", serviceInstance.getServiceId(), serviceInstance.getHost(), serviceInstance.getPort());
+    }
 }

@@ -18,5 +18,5 @@ services:
       - "8762:8762"
     environment:
       - spring.profiles.active=peer2
-      
+
 ## 该文件是最自然的写法，但无法正常使用。运行docker-compose up时，会报循环依赖的异常。

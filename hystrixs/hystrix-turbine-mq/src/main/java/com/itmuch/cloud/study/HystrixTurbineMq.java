@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.turbine.stream.EnableTurbineStream;
 @SpringBootApplication
 @EnableTurbineStream
 public class HystrixTurbineMq {
-  public static void main(String[] args) {
-    SpringApplication.run(HystrixTurbineMq.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(HystrixTurbineMq.class, args);
+    }
 }

@@ -14,7 +14,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 @EnableCircuitBreaker
 public class FeignHystrixFallbackStream {
-  public static void main(String[] args) {
-    SpringApplication.run(FeignHystrixFallbackStream.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(FeignHystrixFallbackStream.class, args);
+    }
 }

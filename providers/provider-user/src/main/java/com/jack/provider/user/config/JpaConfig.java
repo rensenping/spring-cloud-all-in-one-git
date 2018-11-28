@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * @author yangyueming
  */
 @Configuration
-@EntityScan(basePackages={"com.jack.common.entity"})
-@EnableJpaRepositories(basePackages={"com.jack.common.repository"})
+@EntityScan(basePackages = {"com.jack.common.entity"})
+@EnableJpaRepositories(basePackages = {"com.jack.common.repository"})
 public class JpaConfig {
 }

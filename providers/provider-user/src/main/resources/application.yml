@@ -12,7 +12,7 @@ spring:
     url: ${datasource.url}
     username: ${datasource.username}
     password: ${datasource.password}
-#    schema: classpath:schema.sql
+    #    schema: classpath:schema.sql
     data: classpath:data.sql
 
 logging:
