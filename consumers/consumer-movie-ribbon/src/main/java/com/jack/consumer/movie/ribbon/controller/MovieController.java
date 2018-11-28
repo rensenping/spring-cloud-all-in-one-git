@@ -25,15 +25,14 @@ public class MovieController {
 
     @GetMapping("/user/{id}")
     public User findById(@PathVariable Long id) {
-        return this.restTemplate.getForObject("http://provider-user/" + id, User.class);
+        return restTemplate.getForObject("http://provider-user/" + id, User.class);
     }
 
     @GetMapping("/log-user-instance")
     public void logUserInstance() {
-        ServiceInstance serviceInstance = this.loadBalancerClient.choose("provider-user");
+        ServiceInstance serviceInstance = loadBalancerClient.choose("provider-user");
         // 打印当前选择的是哪个节点
-        MovieController.log
-            .info("{}:{}:{}", serviceInstance.getServiceId(), serviceInstance.getHost(),
+        log.info("{}:{}:{}", serviceInstance.getServiceId(), serviceInstance.getHost(),
                 serviceInstance.getPort());
     }
 }

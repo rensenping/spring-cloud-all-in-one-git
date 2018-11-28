@@ -24,8 +24,11 @@
 
         <module>common</module>
 
-        <module>eurekas/eureka-server</module>
-        <module>eurekas/eureka-client</module>
+        <module>registration-center/eurekas/eureka-server</module>
+        <module>registration-center/eurekas/eureka-client</module>
+
+        <module>registration-center/consuls/consul-server</module>
+        <module>registration-center/consuls/consul-client</module>
 
         <module>zuuls/zuul</module>
         <module>zuuls/zuul-filter</module>
@@ -41,7 +44,6 @@
         <module>consumers/consumer-movie-ribbon-customizing-properties</module>
 
         <module>consumers/consumer-movie-ribbon-hystrix</module>
-        <module>consumers/consumer-movie-simple</module>
 
 
         <module>hystrixs/hystrix-dashboard</module>
