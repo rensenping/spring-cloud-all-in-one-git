@@ -16,7 +16,7 @@ import java.util.Collection;
 
 @RestController
 public class UserController {
-    private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
+    private static final Logger log = LoggerFactory.getLogger(UserController.class);
     @Autowired
     private UserRepository userRepository;
 
@@ -28,12 +28,12 @@ public class UserController {
             Collection<? extends GrantedAuthority> collection = user.getAuthorities();
             for (GrantedAuthority c : collection) {
                 // 打印当前登录用户的信息
-                UserController.LOGGER.info("当前用户是{}，角色是{}", user.getUsername(), c.getAuthority());
+                log.info("当前用户是{}，角色是{}", user.getUsername(), c.getAuthority());
             }
         } else {
             // do other things
         }
-        User findOne = this.userRepository.findOne(id);
+        User findOne = userRepository.findOne(id);
         return findOne;
     }
 }
