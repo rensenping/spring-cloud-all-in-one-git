@@ -7,24 +7,17 @@
 
     <parent>
         <groupId>com.jack</groupId>
-        <artifactId>docker-1-simple</artifactId>
+        <artifactId>parent</artifactId>
         <version>1.0</version>
+        <relativePath>../../../parent/pom.xml</relativePath>
     </parent>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.jack</groupId>
-                <artifactId>poms</artifactId>
-                <version>1.0</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
-            <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
+                <version>${spring-cloud-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -33,8 +26,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+            <groupId>com.jack</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 

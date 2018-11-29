@@ -10,9 +10,8 @@ import org.springframework.context.annotation.Configuration;
  * 可参考的示例：
  * http://spring.io/guides/gs/client-side-load-balancing/
  *
- * @author 周立
  */
 @Configuration
-@RibbonClient(name = "microservice-provider-user", configuration = RibbonConfiguration.class)
+@RibbonClient(name = "user", configuration = RibbonConfiguration.class)
 public class TestConfiguration {
 }

@@ -1,0 +1,35 @@
+package com.itmuch.cloud.study.user.feign;
+
+import com.jack.common.entity.User;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+
+/**
+ * Feign的fallback测试
+ * 使用@FeignClient的fallback属性指定回退类
+ *
+ */
+@FeignClient(name = "user", fallback = FeignClientFallback.class)
+public interface UserFeignClient {
+    @GetMapping(value = "/{id}")
+    User findById(@PathVariable("id") Long id);
+
+}
+
+/**
+ * 回退类FeignClientFallback需实现Feign Client接口
+ * FeignClientFallback也可以是public class，没有区别
+ */
+@Component
+class FeignClientFallback implements UserFeignClient {
+    @Override
+    public User findById(Long id) {
+        User user = new User();
+        user.setId(-1L);
+        user.setUsername("默认用户");
+        return user;
+    }
+}

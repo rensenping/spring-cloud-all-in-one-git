@@ -34,16 +34,13 @@
         <module>zuuls/zuul-filter</module>
 
         <module>consumers/consumer-movie-feign</module>
-        <module>consumers/consumer-movie-feign-hystrix-fallback</module>
         <module>consumers/consumer-movie-feign-logging</module>
-        <module>consumers/consumer-movie-feign-hystrix-fallback-stream</module>
 
         <module>consumers/consumer-movie-restTemplate</module>
         <module>consumers/consumer-movie-ribbon</module>
         <module>consumers/consumer-movie-ribbon-customizing</module>
         <module>consumers/consumer-movie-ribbon-customizing-properties</module>
 
-        <module>consumers/consumer-movie-ribbon-hystrix</module>
 
 
         <module>hystrixs/hystrix-hystrixCommand</module>
@@ -51,6 +48,15 @@
         <module>hystrixs/hystrix-dashboard</module>
         <module>hystrixs/hystrix-turbine</module>
         <module>hystrixs/hystrix-turbine-mq</module>
+
+        <module>hystrixs/feign-hystrix-fallback</module>
+        <module>hystrixs/feign-hystrix-fallback-stream</module>
+        <module>hystrixs/ribbon-hystrix</module>
+        <module>hystrixs/feign-hystrix-fallback-factory</module>
+        <module>hystrixs/ribbon-hystrix-turbine-mq</module>
+
+
+
 
 
         <module>providers/provider-user</module>

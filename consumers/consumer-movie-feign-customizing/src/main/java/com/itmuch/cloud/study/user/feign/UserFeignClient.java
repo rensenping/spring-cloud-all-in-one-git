@@ -9,9 +9,8 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 /**
  * 使用@FeignClient的configuration属性，指定feign的配置类。
  *
- * @author 周立
  */
-@FeignClient(name = "microservice-provider-user", configuration = FeignConfiguration.class)
+@FeignClient(name = "user", configuration = FeignConfiguration.class)
 public interface UserFeignClient {
     /**
      * 使用feign自带的注解@RequestLine
