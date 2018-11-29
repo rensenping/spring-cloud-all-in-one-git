@@ -29,7 +29,7 @@
             <artifactId>common</artifactId>
             <version>1.0</version>
         </dependency>
-F
+
     <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-turbine</artifactId>
