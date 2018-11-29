@@ -46,8 +46,7 @@
         <module>consumers/consumer-movie-ribbon-hystrix</module>
 
 
-        <module>hystrixs/hystrix-exception-but-no-fallback</module>
-        <module>hystrixs/hystrix-get-the-exception</module>
+        <module>hystrixs/hystrix-hystrixCommand</module>
 
         <module>hystrixs/hystrix-dashboard</module>
         <module>hystrixs/hystrix-turbine</module>
