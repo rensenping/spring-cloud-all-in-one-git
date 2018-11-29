@@ -33,7 +33,7 @@ public class UserController {
         } else {
             // do other things
         }
-        User findOne = userRepository.findOne(id);
+        User findOne = userRepository.findById(id).get();
         return findOne;
     }
 }
