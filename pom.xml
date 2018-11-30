@@ -24,6 +24,9 @@
 
         <module>common</module>
 
+        <module>configs/config-server</module>
+        <module>configs/config-client</module>
+
         <module>registration-center/eurekas/eureka-server</module>
         <module>registration-center/eurekas/eureka-client</module>
 
@@ -41,8 +44,6 @@
         <module>consumers/consumer-movie-ribbon-customizing</module>
         <module>consumers/consumer-movie-ribbon-customizing-properties</module>
 
-
-
         <module>hystrixs/hystrix-hystrixCommand</module>
 
         <module>hystrixs/hystrix-dashboard</module>
@@ -54,10 +55,6 @@
         <module>hystrixs/ribbon-hystrix</module>
         <module>hystrixs/feign-hystrix-fallback-factory</module>
         <module>hystrixs/ribbon-hystrix-turbine-mq</module>
-
-
-
-
 
         <module>providers/provider-user</module>
         <module>providers/provider-user-ip</module>
