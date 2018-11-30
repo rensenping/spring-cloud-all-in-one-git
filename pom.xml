@@ -24,8 +24,23 @@
 
         <module>common</module>
 
-        <module>configs/config-server</module>
-        <module>configs/config-client</module>
+
+        <module>configs/servers/config-server</module>
+        <module>configs/servers/config-server-authenticating</module>
+        <module>configs/servers/config-server-encryption</module>
+        <module>configs/servers/config-server-encryption-rsa</module>
+        <module>configs/servers/config-server-eureka</module>
+        <module>configs/servers/config-server-eureka-authenticating</module>
+        <module>configs/servers/config-server-health</module>
+        <module>configs/servers/config-server-refresh-cloud-bus</module>
+
+        <module>configs/clients/config-client</module>
+        <module>configs/clients/config-client-authenticating</module>
+        <module>configs/clients/config-client-eureka</module>
+        <module>configs/clients/config-client-eureka-authenticating</module>
+        <module>configs/clients/config-client-refresh</module>
+        <module>configs/clients/config-client-refresh-cloud-bus</module>
+
 
         <module>registration-center/eurekas/eureka-server</module>
         <module>registration-center/eurekas/eureka-client</module>
