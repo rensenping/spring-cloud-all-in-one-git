@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: user
+  datasource:
+    url: ${datasource.url}
+    username: ${datasource.username}
+    password: ${datasource.password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+swagger:
+  base-package: com.jack
+
+#debug: true
+
+#management:
+#  endpoint:
+#    shutdown:
+#      enabled: true
+#    info:
+#      enabled: true
+  # 开启所有端点
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *

@@ -51,6 +51,10 @@
         <module>zuuls/zuul</module>
         <module>zuuls/zuul-filter</module>
 
+        <module>zuuls/zuul-swagger/swagger-zuul</module>
+        <module>zuuls/zuul-swagger/swagger-user</module>
+        <module>zuuls/zuul-swagger/swagger-order</module>
+
         <module>consumers/consumer-movie-feign</module>
         <module>consumers/consumer-movie-feign-logging</module>
 
