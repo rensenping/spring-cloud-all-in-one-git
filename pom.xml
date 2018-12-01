@@ -25,62 +25,62 @@
         <module>common</module>
 
 
-        <module>configs/servers/config-server</module>
-        <module>configs/servers/config-server-authenticating</module>
-        <module>configs/servers/config-server-encryption</module>
-        <module>configs/servers/config-server-encryption-rsa</module>
-        <module>configs/servers/config-server-eureka</module>
-        <module>configs/servers/config-server-eureka-authenticating</module>
-        <module>configs/servers/config-server-health</module>
-        <module>configs/servers/config-server-refresh-cloud-bus</module>
+        <!--<module>configs/servers/config-server</module>-->
+        <!--<module>configs/servers/config-server-authenticating</module>-->
+        <!--<module>configs/servers/config-server-encryption</module>-->
+        <!--<module>configs/servers/config-server-encryption-rsa</module>-->
+        <!--<module>configs/servers/config-server-eureka</module>-->
+        <!--<module>configs/servers/config-server-eureka-authenticating</module>-->
+        <!--<module>configs/servers/config-server-health</module>-->
+        <!--<module>configs/servers/config-server-refresh-cloud-bus</module>-->
 
-        <module>configs/clients/config-client</module>
-        <module>configs/clients/config-client-authenticating</module>
-        <module>configs/clients/config-client-eureka</module>
-        <module>configs/clients/config-client-eureka-authenticating</module>
-        <module>configs/clients/config-client-refresh</module>
-        <module>configs/clients/config-client-refresh-cloud-bus</module>
+        <!--<module>configs/clients/config-client</module>-->
+        <!--<module>configs/clients/config-client-authenticating</module>-->
+        <!--<module>configs/clients/config-client-eureka</module>-->
+        <!--<module>configs/clients/config-client-eureka-authenticating</module>-->
+        <!--<module>configs/clients/config-client-refresh</module>-->
+        <!--<module>configs/clients/config-client-refresh-cloud-bus</module>-->
 
 
         <module>registration-center/eurekas/eureka-server</module>
-        <module>registration-center/eurekas/eureka-client</module>
+        <!--<module>registration-center/eurekas/eureka-client</module>-->
 
-        <module>registration-center/consuls/consul-server</module>
-        <module>registration-center/consuls/consul-client</module>
+        <!--<module>registration-center/consuls/consul-server</module>-->
+        <!--<module>registration-center/consuls/consul-client</module>-->
 
-        <module>zuuls/zuul</module>
-        <module>zuuls/zuul-filter</module>
+        <!--<module>zuuls/zuul</module>-->
+        <!--<module>zuuls/zuul-filter</module>-->
 
         <module>zuuls/zuul-swagger/swagger-zuul</module>
         <module>zuuls/zuul-swagger/swagger-user</module>
         <module>zuuls/zuul-swagger/swagger-order</module>
 
-        <module>consumers/consumer-movie-feign</module>
-        <module>consumers/consumer-movie-feign-logging</module>
+        <!--<module>consumers/consumer-movie-feign</module>-->
+        <!--<module>consumers/consumer-movie-feign-logging</module>-->
 
-        <module>consumers/consumer-movie-restTemplate</module>
-        <module>consumers/consumer-movie-ribbon</module>
-        <module>consumers/consumer-movie-ribbon-customizing</module>
-        <module>consumers/consumer-movie-ribbon-customizing-properties</module>
+        <!--<module>consumers/consumer-movie-restTemplate</module>-->
+        <!--<module>consumers/consumer-movie-ribbon</module>-->
+        <!--<module>consumers/consumer-movie-ribbon-customizing</module>-->
+        <!--<module>consumers/consumer-movie-ribbon-customizing-properties</module>-->
 
-        <module>hystrixs/hystrix-hystrixCommand</module>
+        <!--<module>hystrixs/hystrix-hystrixCommand</module>-->
 
-        <module>hystrixs/hystrix-dashboard</module>
-        <module>hystrixs/hystrix-turbine</module>
-        <module>hystrixs/hystrix-turbine-mq</module>
+        <!--<module>hystrixs/hystrix-dashboard</module>-->
+        <!--<module>hystrixs/hystrix-turbine</module>-->
+        <!--<module>hystrixs/hystrix-turbine-mq</module>-->
 
-        <module>hystrixs/feign-hystrix-fallback</module>
-        <module>hystrixs/feign-hystrix-fallback-stream</module>
-        <module>hystrixs/ribbon-hystrix</module>
-        <module>hystrixs/feign-hystrix-fallback-factory</module>
-        <module>hystrixs/ribbon-hystrix-turbine-mq</module>
+        <!--<module>hystrixs/feign-hystrix-fallback</module>-->
+        <!--<module>hystrixs/feign-hystrix-fallback-stream</module>-->
+        <!--<module>hystrixs/ribbon-hystrix</module>-->
+        <!--<module>hystrixs/feign-hystrix-fallback-factory</module>-->
+        <!--<module>hystrixs/ribbon-hystrix-turbine-mq</module>-->
 
-        <module>providers/provider-user</module>
-        <module>providers/provider-user-ip</module>
-        <module>providers/provider-user-multiple-params</module>
-        <module>providers/provider-user-my-metadata</module>
-        <module>providers/provider-user-simple</module>
-        <module>providers/provider-user-with-auth</module>
+        <!--<module>providers/provider-user</module>-->
+        <!--<module>providers/provider-user-ip</module>-->
+        <!--<module>providers/provider-user-multiple-params</module>-->
+        <!--<module>providers/provider-user-my-metadata</module>-->
+        <!--<module>providers/provider-user-simple</module>-->
+        <!--<module>providers/provider-user-with-auth</module>-->
 
     </modules>
 

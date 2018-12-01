@@ -23,6 +23,7 @@ import java.util.List;
  */
 @Configuration
 @EnableSwagger2
+//@EnableSwagger2Doc
 public class SwaggerConfig {
 
     @Bean

@@ -1,6 +1,16 @@
 spring:
+  datasource:
+    url: ${datasource.url}
+    username: ${datasource.username}
+    password: ${datasource.password}
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
   application:
     name: eureka-server
+
 server:
   port: 8761
 eureka:
